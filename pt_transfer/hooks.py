@@ -279,3 +279,12 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Stock Entry": {
+        "validate": "pt_transfer.transfer.validate",
+        "on_update": "pt_transfer.transfer.on_update",
+        "before_submit": "pt_transfer.transfer.before_submit",
+        "on_cancel": "pt_transfer.transfer.on_cancel",
+        "on_trash": "pt_transfer.transfer.on_trash",
+    }
+}
